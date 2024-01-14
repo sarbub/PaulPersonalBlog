@@ -120,7 +120,7 @@ nav a:hover::after{/*cand se trece cu mouse ul peste */
     position: relative;
     top: -45px;
     font-size: 30px;
-    color: var(--Primary);
+    color: #fff;
 }
 
 .header-text h1{
