@@ -49,3 +49,20 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleBackButton();
 });
 
+
+// Full screen images
+const overlay = document.getElementById('fullscreenOverlay');
+const fullscreenImage = document.getElementById('fullscreenImage');
+
+document.querySelectorAll('.clickable').forEach(img => {
+    img.addEventListener('click', () => {
+        fullscreenImage.src = img.src;
+        overlay.style.display = 'flex';
+    });
+});
+
+overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+});
+
+
